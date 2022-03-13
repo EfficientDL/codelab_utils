@@ -15,6 +15,7 @@ from IPython import display
 import matplotlib as mpl
 from matplotlib import font_manager
 import matplotlib.pyplot as plt
+from pandas import plotting
 
 # Default dpi for plots. These are large but look good on modern 'retina'
 # displays and when copied into presentations and docs.

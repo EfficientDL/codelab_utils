@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setuptools.setup(
     name='codelab_utils',
-    version='0.1',
+    version='0.2',
     author='Efficient Deep Learning Book',
     author_email='gaurav.menghani@gmail.com',
     description='Some util methods related to the EDL book codelabs.',

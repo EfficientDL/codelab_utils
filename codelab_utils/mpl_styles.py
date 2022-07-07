@@ -49,7 +49,7 @@ def import_fonts(font_path: str) -> None:
 def import_default_fonts() -> None:
   """Register a set of default fonts with Matplotlib."""
   for font_path in _FONT_DIR_NAMES:
-    import_fonts(os.path.join(_FONT_PARENT_DIR, font_path))
+    import_fonts(os.path.join(os.path.dirname(__file__), _FONT_PARENT_DIR, font_path))
 
 
 def set_default_styles(retina: bool = True) -> None:
@@ -88,7 +88,6 @@ def set_default_styles(retina: bool = True) -> None:
   mpl_styles = {
       'axes.axisbelow': True,
       'axes.edgecolor': _PLOT_TICK_COLOR,
-      'axes.grid': True,
       'axes.labelcolor': _PLOT_TEXT_COLOR,
       # Set default color palette.
       'axes.prop_cycle': cycler.cycler(

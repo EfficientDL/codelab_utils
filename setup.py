@@ -18,4 +18,7 @@ setuptools.setup(
     license='MIT',
     packages=['codelab_utils'],
     install_requires=['matplotlib'],
+    package_data={
+        "codelab_utils": ["fonts/*/*.*"]
+    }
 )
